@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MIW Consultancy | Sign Up</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+            NAVBAR
+========================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="https://miweb.co.in/uploads/website-images/favicon-2026-03-24-09-36-10-2274.png" alt="MIW Logo">
+
+            <h2>MIW Consultancy</h2>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About Us</a></li>
+
+            <li><a href="#">Expertise Areas</a></li>
+
+            <li><a href="#">Client Logos</a></li>
+
+            <li><a href="#">Services</a></li>
+
+            <li><a href="#">Contact Us</a></li>
+
+            <li><a href="../Login/login.html">Login</a></li>
+
+            <li><a href="signup.html" class="active signup-btn">Signup</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- =========================
+        SIGNUP SECTION
+========================== -->
+
+<section class="signup-section">
+
+    <div class="signup-card">
+
+        <div class="signup-header">
+
+            <h1>Create Your Account</h1>
+
+            <p>Join MIW Consultancy and get started today.</p>
+
+        </div>
+
+        <form action="#" method="post">
+                        <!-- Full Name -->
+
+            <div class="input-group">
+
+                <label for="fullname">Full Name</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+            </div>
+
+            <!-- Email -->
+
+            <div class="input-group">
+
+                <label for="email">Email Address</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile Number -->
+
+            <div class="input-group">
+
+                <label for="mobile">Mobile Number</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <input
+                        type="tel"
+                        id="mobile"
+                        name="mobile"
+                        placeholder="Enter your mobile number"
+                        pattern="[0-9]{10}"
+                        required>
+
+                </div>
+
+            </div>
+
+            <!-- Password -->
+
+            <div class="input-group">
+
+                <label for="password">Password</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required>
+
+                    <span class="toggle-password">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Confirm Password -->
+
+            <div class="input-group">
+
+                <label for="confirmPassword">Confirm Password</label>
+
+                <div class="input-field">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        required>
+
+                    <span class="toggle-confirm-password">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Terms -->
+
+            <div class="terms">
+
+                <label>
+
+                    <input type="checkbox" required>
+
+                    I agree to the <a href="#">Terms & Conditions</a>
+
+                </label>
+
+            </div>
+
+            <!-- Create Account -->
+
+            <button type="submit" class="signup-btn-form">
+
+                Create Account
+
+            </button>
+
+            <!-- Login Link -->
+
+            <div class="login-link">
+
+                <p>
+
+                    Already have an account?
+
+                    <a href="../Login/login.html">
+
+                        Login
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </form>
+                </div>
+
+    </section>
+
+    <!-- =========================
+            FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <p>© 2026 MIW Consultancy. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script1.js"></script>
+
+</body>
+
+</html>
