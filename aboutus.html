@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+    <head>
+        <title>about us</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            body {
+                background-color: #f4f7fb;
+                color:#333;
+                line-height: 1.6;
+                padding-top: 70px;
+                margin: 0;
+                width:100%
+            }
+
+            .navbar {
+                background-color: #1a237e;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 40px;
+                position:fixed;
+                width: 100%;
+                top:0;
+                z-index: 1000;
+            }
+
+            .logo{
+                display: flex;
+                align-items: center;
+                gap:10px;
+                color:white;
+
+            }
+
+            .logo img {
+                width: 40px;
+                height:40px;
+            }
+
+            .logo h2 {
+                font-size: 18px;
+                margin:0;
+            }
+
+            ul {
+                display: flex;
+                gap: 25px;
+                list-style: none;
+            }
+
+            ul li a{
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            ul li a:hover{
+                color:#ffcc00;
+            }
+
+            .about-hero {
+                background-image: url('https://img.magnific.com/free-vector/business-team-communicating-via-social-media_74855-5439.jpg?semt=ais_hybrid&w=740&q=80');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color:black;
+                text-align: center;
+                padding: 120px 20px;
+                
+            }
+
+            .about-hero h1 {
+                font-size:42px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .about-hero p {
+                font-size:18px;
+                max-width: 700px;
+                margin: 0 auto;
+                
+            }
+
+            .container {
+                max-width: 1100px;
+                margin: 60px auto;
+                padding: 0 20px;
+                text-align: center;
+            }
+
+            .container h2, .container p {
+                text-align: center;
+            }
+
+        
+
+            .about-text{
+                text-align: center;
+                max-width: 900px;
+                margin: 60px auto;
+                padding:0 20px;
+            }
+
+            .about-text h2 {
+                font-size: 32px;
+                color: #1a237e;
+                margin-bottom: 20px;
+
+            }
+
+            .about-text p {
+                margin-bottom: 15px;
+                color:#555;
+                font-size: 22px;
+                line-height: 1.8;
+                
+
+            }
+
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap:30px;
+                margin: 60px 0;
+            }
+
+            .card {
+                background-color: white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+                text-align: center;
+            }
+
+           
+            .card h3 {
+                color:#1a237e;
+                margin-bottom: 12px;
+                font-size: 20px;
+            }
+
+
+            .services {
+                text-align: center;
+            }
+            .services h2 {
+                font-size: 32px;
+                color: #1a237e;
+                margin-bottom: 40px;
+
+            }
+
+            .service-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap:25px;
+                max-width: 1100px;
+                margin:0 auto;
+            }
+
+            .service-item {
+                background-color: #f0f2f5;
+                padding:25px;
+                border-radius: 10px;
+                font-weight: 600;
+                color: #1a237e;
+            }
+
+            footer {
+                background-color: #1a237e;
+                color:white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 60px;
+            }
+
+            .center-section {
+                text-align: center;
+                max-width: 800px;
+                margin: 60px auto;
+                padding: 40px 30px;
+                background-color: #ffffff;
+                border-radius: 15px;
+                box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            }
+
+            .center-section h2 {
+                font-size: 30px;
+                color:#1a237e;
+                margin-bottom: 25px;
+
+            }
+
+            .center-section p {
+                font-size: 18px;
+                color:#444;
+                line-height: 2.5;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+
+            .process {
+                display:flex;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .process div {
+                background-color: #e3e9ff;
+                padding: 25px;
+                border-radius: 10px;
+                width:200px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://miweb.co.in/uploads/website-images/favicon-2026-03-24-09-36-10-2274.png" rel="stylesheet">
+                <h2>MIW CONSULTANCY</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="expertise.html">EXPERTISE AREA</a></li>
+                <li><a href="client.html">CLIENT LOGO</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="signup.html">SIGNUP</a></li>
+            </ul>
+        </div>
+
+        <section class="about-hero">
+            <h1>About MIW CONSULTANCY</h1>
+            <p>Your trusted partner for IT solutions, digital transformation, and growth-driven marketing</p>
+        </section>
+
+        <div class="container">
+           
+                <div class="about-text">
+                    <h2>Who We Are</h2>
+                    <p>MIW Consultancy is an IT and digital consulting company helping businesses scale with technology.
+                        We combine deep technical expertise with creative digital strategies to deliver results that matter.
+                    </p>
+
+                    <p>Founded with a vision to make enterprise-level technology accessible to businesses of all sizes, our team of developers, designers and 
+                        marketers work together to build products, campaigns and systems that drive real growth.
+                    </p>
+                    <a href="contact.html" class="btn">Let's Work Together</a>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses with smart technology and digital solutions that increase efficiency, reach and revenue </p>
+                </div>
+
+                <div class="card">
+                    <h3>Our vision</h3>
+                    <p>To became the most trusted digital partner for SMEs and startups by delivering innovation with integrity</p>
+                </div>
+
+                <div class="card">
+                    <h3>
+                        Our values
+                    </h3>
+                    <p>Transparency, Innovation, Client-First approach and Commitment to Quality in everything we build.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="services">
+            <h2>What We Do</h2>
+            <div class="service-grid">
+                <div class="service-item">Web & App Development</div>
+
+                <div class="service-item">SEO and Digital Marketing</div>
+
+                <div class="service-item">Cloud & IT Consulting</div>
+
+                <div class="service-item">UI/UX Design</div>
+
+                <div class="service-item">Social Media Management</div>
+
+                <div class="service-item">Brand Strategy</div>
+
+                <div class="service-item">Data Analytics</div>
+
+                <div class="service-item">Cyber security</div>
+            </div>
+        </section>
+
+        <div class="center-section">
+            <h2>Why Choose MIW?</h2>
+            <p> 10+ Years Experience</p>
+              <p> 500+ Clients </p>
+              <p> 24/7 Support </p>
+              <p> 4.5 &#9733; Ratings Globally</p>
+        </div>
+
+        <div class="center-section">
+            <h2>How We Work</h2>
+            <div class="process">
+                <div>1. <b>Discuss</b><br>Your Ideas</div>
+
+                <div>2. <b>Design & Develep</b><br>We Build It</div>
+
+                <div>3.<b>Launch & Support</b><br>We Grow together</div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2026 MIW CONSULTANCY.
+                All Rights Reserved.
+            </p>
+        </footer>
+    </body>
+</html>
