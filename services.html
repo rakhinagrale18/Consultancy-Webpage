@@ -1,0 +1,329 @@
+<html>
+    <head>
+        <title>it consulting</title>
+    </head>
+    <style>
+        .navbar{
+                background-color: #1a1a1a;
+                color:white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 30px;
+                position: sticky;
+                top:0;
+                z-index: 1000;
+                gap:20px;
+            }
+            
+            .menu a{
+                color:white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: 500;
+            }
+
+            .logo{
+                font-size: 24px;
+                font-weight: bold;
+                color: #ff9800;
+                display: flex;
+                align-items: center;
+                gap:10px;}
+
+            .logo img{
+                height:80px;
+            }
+            .hero{
+                background: darkgray;
+                color: black;
+                padding: 60px 20px;
+            }
+            .btn{
+                display: inline-block;
+                padding: 14px 30px;
+                margin: 10px;
+                border-radius: 40px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .btn-blue{
+                background: #ff9800;
+                color: blue;
+            }
+            .btn-outline{
+                border: 2px solid blue;
+                color: black;
+            }
+            #services{
+                display: none;
+                padding: 50px 20px;
+
+            }
+            #services:target{
+                display: block;
+            }
+            #consultation{
+                display: none;
+                position: fixed;
+                top: 0 ;left: 0;
+                width: 100%;
+                height: 100%;
+                background: white;
+                align-items: center;
+                justify-content: center;
+            }
+            #consultation:target{
+                display: flex;
+            }
+            .popup-box{
+                background: pink;
+                padding: 30px;
+                border-radius: 12px;
+                max-width: 400px;
+                text-align: left;
+                position: relative;
+                border-radius: 13px;
+                box-sizing: 90px;
+            }
+            .close-btn{
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                text-decoration: none;
+                color: red;
+                font-weight: bold;
+            }
+            .y-choose{
+                background: paleturquoise;
+                padding: 70px 20px;
+                text-align: center;
+                color: blue;
+            }
+            y-choose h2{
+                margin-bottom: 15px;
+            }
+            y-choose h2 span{
+                font-style: italic;
+                font-weight: 700;
+            }
+            .y-choose p.subtext{
+                color: black;
+                max-width: 700px;
+                margin: 0 auto 50px;
+                line-height: 1.6;
+            }
+
+            .cards{
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                gap: 30px;
+                flex-wrap: wrap;
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+            .card{
+                background: white;
+                border: 1px solid white;
+                border-radius: 17px;
+                padding: 40px 30px;
+                width: 300px;
+                transition: transform 0.3s ease,background 0.3s ease;
+
+            }
+            .card:hover{
+                transform: translateY(-8px);
+                background: pink;
+            }
+            .card h3{
+                margin-bottom: 15px;
+            }
+            .card p{
+                color: black;
+            }
+            @media (max-width:770px){
+                .y-choose h2{
+                    font-size: 1.8rem;
+                }
+                .cards{
+                    flex-direction: column;
+                    align-items: center;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-left: 40px;
+                }
+            }
+            .card{
+                padding: 40px 40px 50px;
+                border-top: 1px solid red;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-left: 50px;
+
+
+            }
+        
+            .tag{
+                display: inline-block;
+                background: yellowgreen;
+                color: black;
+                font-weight: bold;
+                padding: 6px 15px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            .card h2{
+                color: blue;
+                margin: 0 0 16px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .card p{
+                color: black;
+                max-width: 930px;
+                margin: 0;
+                font-size: 16px;
+                line-height: 1.6;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+    </style>
+    <body>
+        <div class="navbar">
+           
+            <div class="logo">
+            <img src="miweb logo.png" rel="stylesheet"> MIW Consultancy</div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html"> About Us</a>
+                <a href="seo.html">Expertise Areas</a>
+                <a href="case.html">Client Logos</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">SignUp</a>
+            </div>
+        </div>
+        <img src="Consulting.jpeg"  height="500px" width="1350px"  alt="image">
+<center><div class="hero">
+    <h1>Grow your business with MIW Consultancy</h1>
+    <a href="#services" class="btn btn-blue">Explore Services</a>
+    <a href="#consultation" class="btn btn-outline">Free consultation</a>
+    </div>
+    <div id ="consultation">
+        <div class="popup-box">
+            <a href="#" class="close-btn">X</a>
+            <h2>free consultation</h2>
+            <p>Thank you for consulting miw consultancy </p>
+            <p>our servicelist will contact u shortly to discuss your business required .we looki forward to helping yor business grow online</p>
+            
+        </div>
+    </div>
+    </center>
+   
+        <br>
+        <br>
+        <br>
+        <section class="MIW-section"></section>
+        <div id="services">
+        
+           <center> <h1>Our Services</h1>
+            <p>MIW Consultancy partners with organisation </p><p>to sharpen strategy,steady operations, </p><p>growth with people who have sat on your side of the table</p>
+            <p>Advisorry built around the decisions that acctually move yourbusiness</p></center>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="card cream">
+                    <span class="tag">STRATEGY</span>
+                    <h2>Business strategy<h2>
+                        <p>Market position growth planning and competitve analysis to set direction with clarity and evidence.</p>
+                </div>
+                <div class="card tan">
+                    <span class="tag">FINANCE</span>
+                    <h2>Financial Advisory</h2>
+                    <p>Budgeting ,forecasting,and capital structuring that keep decisions grounded in the numbers.</p>
+                </div>
+                <div class="card tan">
+                    <span class="tag">RESEARCH</span>
+                    <h2>Market Research</h2>
+                    <p>Customer,competitor and industry intelligence turned into insight you can act on quickly.</p>
+                </div>
+                <div class="card tan">
+                    <span class="tag">RISK</span>
+                    <h2>Risk & Compliance </h2>
+                    <p>Frameworks and audits that identify exposure early and keep governce defensible.</p>
+                </div>
+                <div class="card tan">
+                    <span class="tag">OPERATIONS</span>
+                    <h2>Operations Consulting</h2>
+                    <p>Process redesign and effeicy work that removes friction wothout breaking what already works.</p>
+                </div>
+                <div class="card tan">
+                    <span class="tag">TECHNOLOGY</span>
+                    <h2>Digital Transformation</h2>
+                    <p>Technology roadmaps and change management that bring team along not just systems.</p>
+                </div>
+                </div>
+        </div>
+    </section>
+        <section class="y-choose">
+            <h2>Why Choose <span>MIW Consultancy</span></h2>
+            <p class="subtext">
+                We combine innovation expertise and data driven strategies to deliver measurable digital consultance
+            </p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Top Google Ranings</h3>
+                    <p> Improve search visiblity and stay a head of yours competitarors</p>
+                </div>
+                <div class="card">
+                    <h3>
+                        Experienced Team
+                    </h3>
+                    <p>Certified Seo professionals devering measurable growth</p>
+
+            </div>
+            <div class="card"> 
+                <h3>ROI Focused</h3>
+                <p>Strategies designed to maxmize traffic leads and revnue</p>
+            </div>
+            
+
+            </div>
+        </section>
+        <div style="background: linear-gradient(120deg,#272727); padding: 50px 20px; display: flex; justify-content: center;gap: 100px; flex-wrap: wrap; text-align: center;">
+        <div>
+            <h1 style="color: bisque; margin: 0;">250+</h1>
+            <p style="color: bisque; font-style: italic;">projects</p>
+
+        </div>
+
+        <div>
+            <h1 style="color: bisque; margin: 0;">150+</h1>
+            <p style="color: bisque; font-style: italic;">clients</p>
+
+        </div>
+        <div>
+            <h1 style="color: bisque; margin: 0;">12+</h1>
+            <p style="color: bisque; font-style: italic;">years</p>
+</div>
+<div>
+            <h1 style="color: bisque; margin: 0;">50+</h1>
+            <p style="color: bisque; font-style: italic;">Experts</p>
+</div>
+
+</div>
+
+
+<div style="background: #1b1b1b; padding: 20px; text-align: center;">
+    <p style="color: white; font-style: italic;margin: 0;">@ 2026 MIW consultancy. All rights Resered</p>
+</div>
+    
+        
+
+    </body>
+</html>
