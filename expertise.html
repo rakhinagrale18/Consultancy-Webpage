@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" description="width=device-width initial-scale=1.0">
+        <title>Consulting Services</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body{
+            background:#91a0df;
+        }
+
+        /* Navigation stytle*/
+        header{
+            background-color: black;
+            padding: 18px 60px;
+            top: 0;
+            z-index:1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .logo img{
+            height: 40px;
+            width: auto;
+        }
+
+        .logo span{
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+        }        
+
+        .nav-links{
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a{
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .nav-links a:hover{
+            border-bottom: 2px white solid;
+        }
+
+        .nav-links .btn-login{
+            color: #fff;
+             background-color: #2563eb;
+        }
+
+        .nav-links .btn-signup{
+            background-color: #2563eb;
+            color: #ffffff;
+            
+        }
+
+        .nav-links .btn-signup:hover{
+           border: 2px solid white;
+            border-top: none;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .nav-links .btn-login:hover{
+              border: 2px solid white;
+            border-top: none;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+    
+        /* Expertise part*/
+
+        .expertise{
+            padding: 70px 20px;
+            color: #fff;
+          background-repeat: no-repeat;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(to bottom,#4a5af9,#a18fff);
+        }
+
+
+
+        .expertise h1{
+            color: #fff;
+            font-size: 40px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .expertise p{
+            color: rgb(255, 253, 253);
+            position: relative;
+            font-size: 17px;
+            margin-bottom: 50px;
+        }
+
+        .expertise-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+            gap:30px;
+            max-width: 1200px;
+            margin: 50 auto;
+            padding: 20px;
+        }
+
+        /* card part*/
+
+        .expertcard{
+            background: rgb(250, 252, 253);
+            border-radius: 15px;
+            padding: 35px 35px 35px 35px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: 0.4s;
+            text-align: center;
+            min-height: 400px;
+        }
+
+        .expertcard:hover{
+            transform: translateY(-13px);
+          
+        }
+
+        .expertcard img{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .icon{
+            width: 170px;
+            height: 170px;
+            background: linear-gradient(135deg,#4a5af9,#010a68);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            font-size: 32px;
+        }
+
+        .expertcard h3{
+            color: #f71707;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .expertcard p{
+                color: #3d0af7;
+        }
+
+        /* footer part*/
+
+        footer{
+            background: #223;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+
+
+
+    </style>
+    <body>
+        <!--Navigation-->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="https://miweb.co.in/uploads/website-images/favicon-2026-03-24-09-36-10-2274.png" alt="Miweb cons. ser.">
+                    <span>MIW Consultancy</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">HOME</a>
+                    <a href="aboutus.html">ABOUTUS</a>
+                    <a href="expertise.html">EXPERTISE AREAS</a>
+                    <a href="client.html">CLIENT LOGOS</a>
+                    <a href="services.html">SERVICES</a>
+                    <a href="contact.html">CONTACTUS</a>
+                    <a href="login.html" class="btn-login">LOGIN</a>
+                    <a href="signup.html" class="btn-signup">SIGN UP</a>
+        
+           </div>
+            </nav>
+        </header>
+
+        <!--expertise areas-->
+        <section class="expertise">
+           
+            <h1>Our Core Expertise</h1>
+            <p>We help bussiness grow with cutting-edge digital solutions</p>
+            
+            <div class="expertise-grid">
+                <!--card 1-->
+                <div class="expertcard">
+                    <div class="icon">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdD69HtB7MyYryHAEejQBFDUlcTR4f4sdTOUL3Pqa3Lw&s=10" alt="SEO">
+                    </div>
+                    <h3>SEO & DIGITAL MARKETING</h3>
+                    <p>We help bussinesses improve their online visibility through effective SEO and digital<br>
+                     marketing strategies. from search engines optimization and content marketing we deliver data<br>
+                     driven solutions that increase traffic, generate leads, and support long-term bussiness growth.<br>
+                     Rank higher on Google and get more leads. We use latest SEO strategies,<br>
+                     PPC and content marketing to grow your brand. </p>
+                </div>
+
+                  <!--card 2-->
+                <div class="expertcard">
+                    <div class="icon">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghcpIleKHK7yOXlwDvkUUgRwXiV0p4YSuGgU_w2BFPw&s=10" alt="">
+                    </div>
+                    <h3>SOCIAL MEDIA MARKETING</h3>
+                    <p>Engaging content, viral reels and paid ads. We manage ypur social media accounts<br>
+                     to build strong brand presence. Our social media marketing experts create customized<br>
+                    compaigns that connect your brand with the right audience. We focus on content planning,<br>
+                    paid advertising, community management and analytics to maximize engagement and return on <br>
+                    investment.</p>
+                </div>
+
+                  <!--card 3-->
+                <div class="expertcard">
+                    <div class="icon">
+                         <img src="https://cdn-icons-png.flaticon.com/512/5234/5234318.png" alt="">
+                    </div>
+                    <h3>WEB DESIGN & DEVELOPEMENT</h3>
+                    <p>Modern fast and responsive content and websites. From landing pages to E-commerce,<br>
+                    we build websites that convert visitors into customers. We design and develop modern,<br>
+                    responsive,and high performing websites tailored to your bussiness goals. From intuitive<br>
+                   user interfaces to secure and scalable web applications, we create digital experience that<br>
+                    engage users and drive bussiness growth.</p>
+                </div>
+
+                  <!--card 4-->
+                <div class="expertcard">
+                    <div class="icon">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR911JdZVo13dAdJbKo3Aj7tScGmCbCAdzTpDig5iBl3w&s=10" alt="">
+                    </div>
+                    <h3>DATA ANALYTICS</h3>
+                    <p>Track, analyze and improve. We provide deep insights from your website and ads data<br>
+                   to make smarter bussiness decisions. Our data analytics services include data visulizations,<br>
+                 reporting,predictive analysis, and performance tracking to drive growth and improve operational<br>
+                 efficiency. KPI monitoring,predictive analytics, and actionable insights that empower organizations to<br>
+                  achieve measurable results. </p>
+                </div>
+
+                  <!--card 5-->
+                <div class="expertcard">
+                    <div class="icon">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhiBcEPodKY22fBSBaMELjIwv9EgJaRtkxf6WTOD6mg&s=10" alt="">
+                    </div>
+                    <h3>BRAND IDENTITY</h3>
+                    <p>Logo, color palette,rand voice. We create complete brand identity and that makes your<br>
+                 bussiness memorable and profesional. Our braanding experts work closely with bussiness to define<br>
+                 thir identity, positioning and voice. We develop cohesive visual and communication strategies<br>
+                 brand recognition and support long-term growth. We create consistent brands that inspire trust <br>
+                and leave a lasting impression.</p>
+                </div>
+
+                  <!--card 6-->
+                <div class="expertcard">
+                    <div class="icon">
+                         <img src="https://cdn-icons-png.flaticon.com/256/2335/2335235.png" alt="">
+                    </div>
+                    <h3>APP DEVELOPMENT</h3>
+                    <p>Anroid.iOS and Web Apps. Custom app solutionsthat are fast,secure and user friendly for<br>
+                     your bussiness growth. We build inmovative mobile applications that help bussinesses improve<br>
+                    customer engagement,streamline operations,and accelerat digital growth. Our solutions are secure,<br>
+                     scalable and designed for exceptional user experience. We focus on modern technologies,seamless<br>
+                     performance and long-term scalability. &#9733; Key App development Expertise:- 1. Android,iOS Apps.<br>
+                   2. Performance Optimizations 3. Maintainance & Support 4. App Testing & Debugging.
+                    etc,.
+                     </b></p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <p>&copy; 2026 MiWeb Digital | Transforming Ideas Into Digital Reality.</p>
+        </footer>
+    </body>
+</html>
