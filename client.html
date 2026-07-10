@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIW Consultancy | Trusted Clients</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f48cf; /* Deep corporate dark blue */
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover, .menu a.active {
+    color: #2563eb; /* Corporate Blue */
+}
+
+/* Highlighted Login & Sign Up Session Buttons */
+.menu .btn-login {
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.menu .btn-login:hover {
+    background-color: #f0f7ff;
+    color: #1d4ed8;
+}
+
+.menu .btn-signup {
+    background-color: #2563eb;
+    color: #ffffff !important;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.menu .btn-signup:hover {
+    background-color: #1d4ed8;
+}
+
+body{
+    background:#f4f8fb;
+    background-image: url("background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#070707,#0059b3);
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+header p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* Section */
+
+.section{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    color:#003366;
+    font-size:38px;
+}
+
+.section-title p{
+    color:#666;
+    margin-top:10px;
+}
+
+/* Grid */
+
+.clients{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+/* Card */
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* Statistics */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:70px;
+}
+
+.stat{
+    background:#003366;
+    color:#fff;
+    width:220px;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.stat h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#003366;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:34px;
+}
+
+.section-title h2{
+font-size:30px;
+}
+}
+</style>
+
+</head>
+
+<body>
+      <div class="navbar">
+            <div class="logo">
+                <img src="https://miweb.co.in/uploads/website-images/favicon-2026-03-24-09-36-10-2274.png"> 
+                <span>Miw Consultancy</span>
+            </div>
+            <div class="menu">
+                <a href="index.html" >Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="expertise.html">Expertise Areas</a>
+                <a href="client.html" class="active">Client Logos</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+
+<header>
+
+<h1>Our Clients</h1>
+
+<p>
+We are proud to work with businesses across multiple industries by delivering
+innovative consulting solutions, digital transformation services,
+and long-term business partnerships.
+</p>
+
+</header>
+
+<section class="section">
+
+<div class="section-title">
+
+<h2>Our Trusted Clients</h2>
+
+<p>
+Our clients trust MIW Consultancy for quality, professionalism, and reliable consulting services.
+</p>
+
+</div>
+
+<div class="clients">
+
+<div class="card">
+<img src="logo1.jpeg" alt="Client 1">
+<h3>NovaTech Solutions</h3>
+<p>Technology Consulting & Business Solutions</p>
+</div>
+
+<div class="card">
+<img src="apex.jpeg" alt="Client 2">
+<h3>Apex Global Ltd</h3>
+<p>HR & Recruitment Consulting</p>
+</div>
+
+<div class="card">
+<img src="blue.jpeg" alt="Client 3">
+<h3>BlueWave Technologies</h3>
+<p>Financial & Corporate Advisory</p>
+</div>
+
+<div class="card">
+<img src="prime.jpeg" alt="Client 4">
+<h3>Prime Healthcare</h3>
+<p>Digital Transformation Services</p>
+</div>
+
+<div class="card">
+<img src="zinth.jpeg" alt="Client 5">
+<h3>Zenith Finances</h3>
+<p>IT Infrastructure & Cloud Solutions</p>
+</div>
+
+<div class="card">
+<img src="elite.jpeg" alt="Client 6">
+<h3>Elite Manufacturing</h3>
+<p>Business Process Consulting</p>
+</div>
+
+<div class="card">
+<img src="future.jpeg" alt="Client 6">
+<h3>FutureSoft Systems</h3>
+<p>IT Infrastructure & Cloud Solutions</p>
+</div>
+
+<div class="card">
+<img src="horizin.png" alt="Client 6">
+<h3>Horizon Logistics</h3>
+<p>Business Process Consulting</p>
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h2>150+</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="stat">
+<h2>300+</h2>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat">
+<h2>98%</h2>
+<p>Client Satisfaction</p>
+</div>
+
+<div class="stat">
+<h2>8+</h2>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 MIW Consultancy. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
